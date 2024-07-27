@@ -7,7 +7,7 @@ Item shopping list commands
 ### Installation
 - Download the [latest](https://github.com/deanhannigan/gief/releases/latest/download/gief.zip)
 - Copy the release to `{Your WoW Root}\Interface\AddOns`
-- Extract to the release contents to `\gief` and you should get the following `{Your WoW Root}\Interface\AddOns\gief`
+- Extract the release contents to `\gief` and you should get the following `{Your WoW Root}\Interface\AddOns\gief`
 
 ### Show all
 List all items currently in your shopping list
