@@ -1,0 +1,24 @@
+name: Manual Release
+run-name: Release to v${{ github.event.inputs.version }}
+
+on: 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Bump Version
+        default: 1.0.0
+        required: true
+jobs:
+  release:
+    name: Bump Package Version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Example variable usage
+        run: git tag ${{ github.event.inputs.version }}
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: v${{ github.event.inputs.version }}
+          tag_name: v${{ github.event.inputs.version }}
