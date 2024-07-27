@@ -21,6 +21,12 @@ Shift-click one or more items. Adds all items to your shopping list
 \gief [Elixir of Draenic Wisdom]
 ```
 
+### Announce shopping list to Party
+Emit all items currently in your shopping list to party chat.
+```lua
+\gief p
+```
+
 ### Delete from list
 Shift-click one or more items. Will remove all linked items from your shopping list
 ```lua
