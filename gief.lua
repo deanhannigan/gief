@@ -44,14 +44,9 @@ end
 
 local function listToString()
   local result = ""
-  -- local size = countItems(items)
-  -- local count = 0
   for itemID, _ in pairs(shopping_list) do
     local itemName, itemLink = GetItemInfo(itemID)
     result = result .. itemLink
-    -- if count < size then
-    --     result = result .. ", "
-    -- end
   end
   return result
 end
@@ -76,7 +71,6 @@ function addToList(items)
     else
       DEFAULT_CHAT_FRAME:AddMessage("Failed to parse " .. itemLink)
     end
-    -- shopping_list
   end
 end
 
@@ -98,7 +92,7 @@ end
 function findLinks(msg)
   local itemLinks = {}
   local pattern = "(|c%x+|Hitem:%d+[^|]*|h%[.-%]|h|r)"
-  -- Adjust the pattern to match the full item link
+
   for itemLink in string.gmatch(msg, pattern) do
       DEFAULT_CHAT_FRAME:AddMessage("match " .. itemLink)
       table.insert(itemLinks, itemLink)
