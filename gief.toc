@@ -1,8 +1,8 @@
 ## Interface: 20400
 ##
 ## Title: gief
-## Version: 0.0.1
-## Author: makro
+## Version: 0.0.2
+## Author: Dean Hannigan 
 ## SavedVariables:
 ## SavedVariablesPerCharacter: shopping_list
 gief.lua
