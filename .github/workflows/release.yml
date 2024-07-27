@@ -18,11 +18,12 @@ jobs:
       - name: Create ZIP file
         run: |
           mkdir -p release
-          zip -r release/gief.zip gief.lua gief.loc gief.xml
-      # - name: Tag the release
-      #   run: git tag ${{ github.event.inputs.version }}
-      # - name: Release
-      #   uses: softprops/action-gh-release@v1
-      #   with:
-      #     name: v${{ github.event.inputs.version }}
-      #     tag_name: v${{ github.event.inputs.version }}
+          zip -r release/gief.zip gief.lua gief.toc gief.xml
+      - name: Tag the release
+        run: git tag ${{ github.event.inputs.version }}
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release/gief.zip
+          name: v${{ github.event.inputs.version }}
+          tag_name: v${{ github.event.inputs.version }}
