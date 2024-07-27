@@ -1,4 +1,4 @@
-name: Manual Release
+name: Tag Version
 run-name: Release to v${{ github.event.inputs.version }}
 
 on: 
