@@ -1,0 +1,9 @@
+## Interface: 20400
+##
+## Title: gief
+## Version: 0.0.1
+## Author: makro
+## SavedVariables:
+## SavedVariablesPerCharacter: shopping_list
+gief.lua
+gief.xml
